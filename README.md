@@ -1,2 +1,2 @@
-# Software_QA_Portfolio
-Vincent Leung's QA Portfolio 2016
+# About
+My name is Vincent Leung and this is my GitHub repository. I am an IT professional working and living in the Washington, DC area. You can reach me at vleung1@gmail.com. My LinkedIn profile is at https://www.linkedin.com/in/v1ncentleung 
