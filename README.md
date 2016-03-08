@@ -1,2 +1,2 @@
-# QA-Portfolio
-Vincent Leung's QA Engineer Portfolio 2016
+# Software_QA_Portfolio
+Vincent Leung's QA Portfolio 2016
