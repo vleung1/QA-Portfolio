@@ -2,6 +2,7 @@ from BasePage                import BasePage
 from BasePage                import IncorrectPageException
 from oig.Constants           import TT_Constants
 from oig.UIMap               import IgDeskbookPageMap
+import time
 
 
 #this is a page object for the Inspector General Deskbook page 
@@ -62,6 +63,7 @@ class IgDeskbookPage(BasePage):
                                       "id",
                                       IgDeskbookPageMap['IgDeskbookVol4Part3Id']
       )
+
       self.click(10,
                  "id",
                  IgDeskbookPageMap['IgDeskbookIntroId']
@@ -69,7 +71,7 @@ class IgDeskbookPage(BasePage):
       self.click(10,
                  "id",
                  IgDeskbookPageMap['IgDeskbookVol1Part1Id']
-      )
+      )       
       self.click(10,
                  "id",
                  IgDeskbookPageMap['IgDeskbookVol1Part2Id']
@@ -102,6 +104,6 @@ class IgDeskbookPage(BasePage):
                  "id",
                  IgDeskbookPageMap['IgDeskbookVol4Part3Id']
       )
-
+            
 
 

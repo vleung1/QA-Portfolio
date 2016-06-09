@@ -2,6 +2,7 @@ from oig.Constants            import TT_Constants
 from oig.pages.OigHotlinePage import OigHotlinePage
 from oig.BaseTestCase         import BaseTestCase
 import unittest
+import nose
 from nose.plugins.attrib      import attr
 
 
@@ -20,7 +21,7 @@ class SendRequestTest(BaseTestCase, unittest.TestCase):
 
     #verify that the page does not submit when one of the required fields are not filled out
     @attr(priority="high")
-    def test_Validation(self):
+    def test_SendRequestTestValidation(self):
         oig_hotline_page_obj = OigHotlinePage(self.driver)
         oig_hotline_page_obj.validation_check()
 

@@ -2,6 +2,7 @@ from oig.Constants            import TT_Constants
 from oig.pages.IgDeskbookPage import IgDeskbookPage
 from oig.BaseTestCase         import BaseTestCase
 import unittest
+import nose
 from nose.plugins.attrib      import attr
 
 
@@ -15,8 +16,8 @@ class IgDeskbookTest(BaseTestCase, unittest.TestCase):
 
     @attr(priority="medium") 
     def test_IgDeskbookTest(self):
-        ig_deskbook_page_obj = IgDeskbookPage(self.driver)
-        ig_deskbook_page_obj.click_and_download()
+        ig_deskbook_obj = IgDeskbookPage(self.driver)
+        ig_deskbook_obj.click_and_download()
 
     def tearDown(self):
         super(IgDeskbookTest, self).tearDown()

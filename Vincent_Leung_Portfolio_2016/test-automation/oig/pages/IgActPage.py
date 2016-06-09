@@ -1,26 +1,24 @@
 from BasePage                import BasePage
 from BasePage                import IncorrectPageException
 from oig.Constants           import TT_Constants
-from oig.UIMap               import OrganizationalChartPageMap
+from oig.UIMap               import IgActPageMap
 
 
-#this is a page object for the organizational chart page
-#accessed after clicking the Organizational Chart link 
-class OrganizationalChartPage(BasePage):
+#this is a page object for the IG Act info page
+#accessed after clicking the Inspector General Act link 
+class IgActPage(BasePage):
 
     def __init__(self, driver):
-        super(OrganizationalChartPage, self).__init__(driver)
+        super(IgActPage, self).__init__(driver)
   
     def _verify_page(self):
-    	try:
+        try:
           self.wait_for_element_visibility(10, 
                                          "xpath", 
-                                         OrganizationalChartPageMap['OrganizationalChartXpath']
+                                         IgActPageMap['IgActBannerXpath']
           )
         except:   
           raise IncorrectPageException
-          
-    
     
     
     
