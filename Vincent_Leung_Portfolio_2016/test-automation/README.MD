@@ -3,7 +3,7 @@
 This is a suite of automated web UI tests built on a Selenium WebDriver/Python framework. The product under test is the U.S. Treasury Department Office of Inspector General's public, front-facing website. Tests are focused on UAT and functional testing of departmental pages and verification of public domain legal and audit documents. 
 
 #Dependencies
-This is an overview of tools required to run these tests.
+This is an overview of tools required to run these tests (steps below for Mac OS X).
 
 - Python 2.7 is required for this test suite.
 - Install Firefox from: http://www.mozilla.org
