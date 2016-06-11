@@ -12,7 +12,15 @@ This is an overview of tools required to run these tests (steps below for Mac OS
 - Install Selenium IDE from: http://docs.seleniumhq.org/download/
 - Install Chrome from: https://www.google.com/intl/en_us/chrome/browser/
 - Install Sublime Text Editor 2 from: http://www.sublimetext.com/2
-- Install Java SDK for Mac from: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+- Install Java SDK for Mac from: http://www.oracle.com/technetwork/java/javase/downloads/index.html]
+- Install Chromedriver using the following steps:
+
+a) Go to https://sites.google.com/a/chromium.org/chromedriver/
+
+b) Find the local path by running the following command: echo $PATH
+
+c) Unzip the chromdriver file into the local path
+
 - Install Pip using the following steps:
 
 a) Go to https://pypi.python.org/pypi/setuptools
