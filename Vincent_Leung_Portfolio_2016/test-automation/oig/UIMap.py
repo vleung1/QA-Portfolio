@@ -112,15 +112,15 @@ IgDeskbookPageMap = dict(IgDeskbookBannerXpath = "//div[contains(text(), 'The In
 ReportsPageMap = dict(ReportsPageBannerXpath      = "//div[contains(text(), 'Reports')]",
                       ReportsAuditLinkId          = "anch_202",
                       ReportsOtherLinkId          = "anch_203",
-                      ReportsCongressLinkId       = "anch_204",
-                      ReportsInvestigationsLinkId = "anch_205",
-                      ReportsPeerLinkId           = "anch_206"
+                      ReportsCongressLinkId       = "anch_205",
+                      ReportsInvestigationsLinkId = "anch_206",
+                      ReportsPeerLinkId           = "anch_207"
 )
 
 ReportsAuditPageMap = dict(ReportsAuditBannerXpath = "//div[contains(text(), 'Audit and Evaluation Reports')]"
 )
 
-ReportsOtherPageMap = dict(ReportsOtherBannerXpath = "//div[contains(text(), 'Other Reports')]"
+ReportsOtherPageMap = dict(ReportsOtherBannerXpath = "//div[contains(text(), 'Other Documents')]"
 )
 
 ReportsCongressPageMap = dict(ReportsCongressBannerXpath = "//div[contains(text(), 'Semiannual Reports to Congress')]"
