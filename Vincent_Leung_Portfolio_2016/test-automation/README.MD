@@ -5,7 +5,7 @@ This is a suite of automated web UI tests built on a Selenium WebDriver/Python f
 #Dependencies
 This is an overview of tools required to run these tests (steps below for Mac OS X).
 
-1. Python 2.7 is required for this test suite.
+1. Python 2.7 is required for this test suite, available here: https://www.python.org/downloads/
 
 2. Install Firefox from: http://www.mozilla.org
 
