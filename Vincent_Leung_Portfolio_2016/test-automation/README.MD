@@ -19,7 +19,7 @@ This is an overview of tools required to run these tests (steps below for Mac OS
 
 7. Install Sublime Text Editor 2 from: http://www.sublimetext.com/2
 
-8. Install Java SDK for Mac from: http://www.oracle.com/technetwork/java/javase/downloads/index.html]
+8. Install Java SDK for Mac from: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 9. Install Chromedriver using the following steps:
   - Go to https://sites.google.com/a/chromium.org/chromedriver/
