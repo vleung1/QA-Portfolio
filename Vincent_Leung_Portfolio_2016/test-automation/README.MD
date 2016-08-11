@@ -1,6 +1,6 @@
 #Overview
 
-This is a suite of automated web UI tests built on a Selenium WebDriver/Python framework. The product under test is the U.S. Treasury Department Office of Inspector General's public, front-facing website. Tests are focused on UAT and functional testing of departmental pages and verification of public domain legal and audit documents. 
+This is a suite of automated web UI tests built on a Selenium WebDriver/Python framework. The product under test is the U.S. Treasury Department Office of Inspector General's public, front-facing website. Tests are focused on UAT and functional testing of departmental pages and integrity verification of public domain legal and audit documents. 
 
 #Dependencies
 This is an overview of tools required to run these tests (steps below for Mac OS X).
@@ -54,12 +54,14 @@ This is an overview of tools required to run these tests (steps below for Mac OS
 
 #Running the tests
 
-1. Open terminal
+1. Download the oig directory and place in your working directory 
 
-2. cd into the oig\tests directory
+2. Open terminal
 
-3. To run all tests, run the following command: 
+3. cd into the oig\tests directory
+
+4. To run all tests, run the following command: <br />
     nosetests --verbosity=2 --no-byte-compile
 
-4. To run one or more specific tests, run the following command: 
+5. To run one or more specific tests, run the following command: <br />
     nosetests --verbosity=2 --no-byte-compile --tests="nameoftest1, nameoftest2,..."
