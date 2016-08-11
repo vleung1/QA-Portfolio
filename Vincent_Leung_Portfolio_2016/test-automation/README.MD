@@ -27,24 +27,24 @@ This is an overview of tools required to run these tests (steps below for Mac OS
   - Unzip the chromdriver file into the local path
 
 10. Install Pip using the following steps:
-- Go to https://pypi.python.org/pypi/setuptools
-- Scroll all the way to the bottom of the page and download the latest tar.gz version of setuptools
-- Untar the setuptools file by typing the following command: tar -vxzf FILENAME
-- cd into the setuptools folder and install setuptools by running: sudo python setup.py install
-- Install Pip by running the following command: sudo easy_install pip
+  - Go to https://pypi.python.org/pypi/setuptools
+  - Scroll all the way to the bottom of the page and download the latest tar.gz version of setuptools
+  - Untar the setuptools file by typing the following command: tar -vxzf FILENAME
+  - cd into the setuptools folder and install setuptools by running: sudo python setup.py install
+  - Install Pip by running the following command: sudo easy_install pip
 
 11. Install Selenium by running: sudo pip install –U selenium
 
 12. Install nose by running: sudo pip install nose
 
 13. Overwrite the PYTHONPATH using the following steps:
-- open the terminal and run: open .profile
-- Add the two lines below in the .profile file and save: 
-PYTHONPATH="/Users/YOUR_HOME_HERE/Desktop"
-export PYTHONPATH
-- Close the .profile file
-- Close the terminal
-- Open a new instance of the terminal and verify that the PYTHONPATH has been overwritten by running the following command:
+  - open the terminal and run: open .profile
+  - Add the two lines below in the .profile file and save: 
+    PYTHONPATH="/Users/YOUR_HOME_HERE/Desktop"
+    export PYTHONPATH
+  - Close the .profile file
+  - Close the terminal
+  - Open a new instance of the terminal and verify that the PYTHONPATH has been overwritten by running the following command:
 echo $PYTHONPATH
 
 #Running the tests
