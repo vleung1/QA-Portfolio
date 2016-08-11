@@ -22,9 +22,9 @@ This is an overview of tools required to run these tests (steps below for Mac OS
 8. Install Java SDK for Mac from: http://www.oracle.com/technetwork/java/javase/downloads/index.html]
 
 9. Install Chromedriver using the following steps:
-- Go to https://sites.google.com/a/chromium.org/chromedriver/
-- Find the local path by running the following command: echo $PATH
-- Unzip the chromdriver file into the local path
+  - Go to https://sites.google.com/a/chromium.org/chromedriver/
+  - Find the local path by running the following command: echo $PATH
+  - Unzip the chromdriver file into the local path
 
 10. Install Pip using the following steps:
 - Go to https://pypi.python.org/pypi/setuptools
