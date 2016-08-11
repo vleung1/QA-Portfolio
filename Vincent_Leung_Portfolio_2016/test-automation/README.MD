@@ -22,31 +22,29 @@ This is an overview of tools required to run these tests (steps below for Mac OS
 8. Install Java SDK for Mac from: http://www.oracle.com/technetwork/java/javase/downloads/index.html]
 
 9. Install Chromedriver using the following steps:
-a) Go to https://sites.google.com/a/chromium.org/chromedriver/
-
-b) Find the local path by running the following command: echo $PATH
-
-c) Unzip the chromdriver file into the local path
+- Go to https://sites.google.com/a/chromium.org/chromedriver/
+- Find the local path by running the following command: echo $PATH
+- Unzip the chromdriver file into the local path
 
 10. Install Pip using the following steps:
-a) Go to https://pypi.python.org/pypi/setuptools
-b) Scroll all the way to the bottom of the page and download the latest tar.gz version of setuptools
-c) Untar the setuptools file by typing the following command: tar -vxzf FILENAME
-d) cd into the setuptools folder and install setuptools by running: sudo python setup.py install
-e) Install Pip by running the following command: sudo easy_install pip
+- Go to https://pypi.python.org/pypi/setuptools
+- Scroll all the way to the bottom of the page and download the latest tar.gz version of setuptools
+- Untar the setuptools file by typing the following command: tar -vxzf FILENAME
+- cd into the setuptools folder and install setuptools by running: sudo python setup.py install
+- Install Pip by running the following command: sudo easy_install pip
 
 11. Install Selenium by running: sudo pip install –U selenium
 
 12. Install nose by running: sudo pip install nose
 
 13. Overwrite the PYTHONPATH using the following steps:
-a) open the terminal and run: open .profile
-b) Add the two lines below in the .profile file and save: 
+- open the terminal and run: open .profile
+- Add the two lines below in the .profile file and save: 
 PYTHONPATH="/Users/YOUR_HOME_HERE/Desktop"
 export PYTHONPATH
-d) Close the .profile file
-e) Close the terminal
-f) Open a new instance of the terminal and verify that the PYTHONPATH has been overwritten by running the following command:
+- Close the .profile file
+- Close the terminal
+- Open a new instance of the terminal and verify that the PYTHONPATH has been overwritten by running the following command:
 echo $PYTHONPATH
 
 #Running the tests
