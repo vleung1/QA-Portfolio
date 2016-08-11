@@ -50,6 +50,9 @@ echo $PYTHONPATH
 #Running the tests
 
 1. Open terminal
+
 2. cd into the oig\tests directory
+
 3. To run all tests, run the following command: nosetests --verbosity=2 --no-byte-compile
+
 4. To run one or more specific tests, run the following command: nosetests --verbosity=2 --no-byte-compile --tests="nameoftest1, nameoftest2,..."
