@@ -44,9 +44,9 @@ This is an overview of tools required to run these tests (steps below for Mac OS
 
 13. Overwrite the PYTHONPATH using the following steps:
   - open the terminal and run: open .profile
-  - Add the two lines below in the .profile file and save: 
-    PYTHONPATH="/Users/YOUR_HOME_HERE/Desktop"
-    export PYTHONPATH
+  - Add the two lines below in the .profile file and save: <br />
+    PYTHONPATH="/Users/YOUR_HOME_HERE/Desktop"<br />
+    export PYTHONPATH<br />
   - Close the .profile file
   - Close the terminal
   - Open a new instance of the terminal and verify that the PYTHONPATH has been overwritten by running the following command:
