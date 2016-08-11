@@ -23,19 +23,24 @@ This is an overview of tools required to run these tests (steps below for Mac OS
 
 9. Install Chromedriver using the following steps:
   - Go to https://sites.google.com/a/chromium.org/chromedriver/
-  - Find the local path by running the following command: echo $PATH
+  - Find the local path by running the following command: 
+    echo $PATH
   - Unzip the chromdriver file into the local path
 
 10. Install Pip using the following steps:
-  - Go to https://pypi.python.org/pypi/setuptools
+  - Go to: https://pypi.python.org/pypi/setuptools
   - Scroll all the way to the bottom of the page and download the latest tar.gz version of setuptools
   - Untar the setuptools file by typing the following command: tar -vxzf FILENAME
-  - cd into the setuptools folder and install setuptools by running: sudo python setup.py install
-  - Install Pip by running the following command: sudo easy_install pip
+  - cd into the setuptools folder and install setuptools by running the following command: 
+    sudo python setup.py install
+  - Install Pip by running the following command: 
+    sudo easy_install pip
 
-11. Install Selenium by running: sudo pip install –U selenium
+11. Install Selenium by running the following command: 
+    sudo pip install –U selenium
 
-12. Install nose by running: sudo pip install nose
+12. Install nose by running the following command: 
+    sudo pip install nose
 
 13. Overwrite the PYTHONPATH using the following steps:
   - open the terminal and run: open .profile
@@ -45,7 +50,7 @@ This is an overview of tools required to run these tests (steps below for Mac OS
   - Close the .profile file
   - Close the terminal
   - Open a new instance of the terminal and verify that the PYTHONPATH has been overwritten by running the following command:
-echo $PYTHONPATH
+    echo $PYTHONPATH
 
 #Running the tests
 
@@ -53,6 +58,8 @@ echo $PYTHONPATH
 
 2. cd into the oig\tests directory
 
-3. To run all tests, run the following command: nosetests --verbosity=2 --no-byte-compile
+3. To run all tests, run the following command: 
+    nosetests --verbosity=2 --no-byte-compile
 
-4. To run one or more specific tests, run the following command: nosetests --verbosity=2 --no-byte-compile --tests="nameoftest1, nameoftest2,..."
+4. To run one or more specific tests, run the following command: 
+    nosetests --verbosity=2 --no-byte-compile --tests="nameoftest1, nameoftest2,..."
