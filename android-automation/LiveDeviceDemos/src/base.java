@@ -1,10 +1,15 @@
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -22,6 +27,7 @@ public class base {
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
 		//set device name
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
+		//cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		//set command timeout
 		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "25");
 		//set package name
@@ -34,7 +40,7 @@ public class base {
 		return driver;
 		
 		/*
-		this is config for loading app onto device via the src folder similar to running on emulator
+		this is DesiredCapabilities config for loading app onto real device via the src folder, similar to running on emulator
 		File f = new File("src");
 		File fs = new File(f, "Raaga.apk");
 		DesiredCapabilities cap = new DesiredCapabilities();
@@ -46,5 +52,13 @@ public class base {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		*/
 	}
+	/*public static void swipeHorizontal(AndroidDriver<AndroidElement> driver, double startPercentage, double finalPercentage, double anchorPercentage, int duration) throws Exception {
+        Dimension size = driver.manage().window().getSize();
+        int anchor = (int) (size.height * anchorPercentage);
+        int startPoint = (int) (size.width * startPercentage);
+        int endPoint = (int) (size.width * finalPercentage);
+        new TouchAction(driver).press(startPoint, anchor).waitAction(Duration.ofMillis(duration)).moveTo(endPoint, anchor).release().perform();
+    }
+    */
 
 }
