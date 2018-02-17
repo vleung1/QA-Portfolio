@@ -18,8 +18,6 @@ import io.appium.java_client.remote.MobilePlatform;
 public class base {
 
 	public static AndroidDriver<AndroidElement> Capabilities() throws MalformedURLException {
-		// TODO Auto-generated method stub
-
 		
 		//this is for loading apps pre-installed on a real device
 		DesiredCapabilities cap = new DesiredCapabilities();
@@ -39,8 +37,7 @@ public class base {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 		
-		/*
-		this is DesiredCapabilities config for loading app onto real device via the src folder, similar to running on emulator
+		/* this is DesiredCapabilities config for loading app onto real device via the src folder, similar to running on emulator
 		File f = new File("src");
 		File fs = new File(f, "Raaga.apk");
 		DesiredCapabilities cap = new DesiredCapabilities();
@@ -51,14 +48,15 @@ public class base {
 		AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		*/
-	}
-	/*public static void swipeHorizontal(AndroidDriver<AndroidElement> driver, double startPercentage, double finalPercentage, double anchorPercentage, int duration) throws Exception {
+		
+		/* this is method for swiping	
+	 	public static void swipeHorizontal(AndroidDriver<AndroidElement> driver, double startPercentage, double finalPercentage, double anchorPercentage, int duration) throws Exception {
         Dimension size = driver.manage().window().getSize();
         int anchor = (int) (size.height * anchorPercentage);
         int startPoint = (int) (size.width * startPercentage);
         int endPoint = (int) (size.width * finalPercentage);
         new TouchAction(driver).press(startPoint, anchor).waitAction(Duration.ofMillis(duration)).moveTo(endPoint, anchor).release().perform();
-    }
-    */
-
+    	}
+		*/
+	}
 }

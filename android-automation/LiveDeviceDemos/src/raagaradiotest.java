@@ -13,14 +13,10 @@ import io.appium.java_client.android.AndroidKeyCode;
 public class raagaradiotest extends base {
 
 	public static void main(String[] args) throws MalformedURLException {
-		// TODO Auto-generated method stub
-
-		
 		//open Raaga app, click Done, click Skip to Raaga, click World Music, click Raaga Live Radio
 		//click hamburger menu, click Settings, click Notifications, toggle Music Notifications on and off using x and y tap methods
 		AndroidDriver<AndroidElement> driver = Capabilities();
 		TouchAction t = new TouchAction(driver);
-
 		driver.findElementById("android:id/button2").click();
 		driver.findElementById("com.raaga.android:id/skip_text").click();
 		driver.findElementById("com.raaga.android:id/landing_skip_to_raaga").click();
@@ -42,7 +38,5 @@ public class raagaradiotest extends base {
 		t.tap(point.x+100, point.y+30).perform();
 		driver.pressKeyCode(AndroidKeyCode.KEYCODE_BACK);
 		driver.pressKeyCode(AndroidKeyCode.KEYCODE_BACK);
-		
 	}
-
 }
