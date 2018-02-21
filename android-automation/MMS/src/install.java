@@ -44,7 +44,9 @@ public class install extends base {
 		t.tap(driver.findElementsByClassName("android.widget.Spinner").get(5)).perform();
 		t.tap(driver.findElementByXPath("//android.widget.CheckedTextView[@text='Asian/Pacific Islander']")).perform();
 		//Without this line, the vertical swipe fails. My guess is that by locating an element, it focuses back on the screen again correctly after the previous step of choosing from the dropdown choices
-		driver.findElementByXPath("//android.view.View[@text='ZIP CODE *']");
+		driver.findElementByXPath("//android.view.View[@text='CHILDREN UNDER 18 IN HOME? *']");
+		//need to scroll down twice for the next findelement to work for on larger screen sizes-- for example, one scroll was working on S5, but not for Nexus 6 
+		t.press(startx, starty).waitAction(Duration.ofMillis(1000)).moveTo(startx, endy).release().perform();
 		t.press(startx, starty).waitAction(Duration.ofMillis(1000)).moveTo(startx, endy).release().perform();
 		t.tap(driver.findElementsByClassName("android.widget.Spinner").get(6)).perform();
 		t.tap(driver.findElementByXPath("//android.widget.CheckedTextView[@text='not Spanish, Hispanic, or Latino']")).perform();
@@ -52,16 +54,19 @@ public class install extends base {
 		t.tap(driver.findElementByXPath("//android.widget.CheckedTextView[@text='English all or most of the time']")).perform();
 		t.tap(driver.findElementsByClassName("android.widget.Spinner").get(8)).perform();
 		t.tap(driver.findElementByXPath("//android.widget.CheckedTextView[@text='English']")).perform();
-		//t.tap(driver.findElementById("submit")).perform();
-
-		
-		/* accessibility settings steps
+		t.tap(driver.findElementById("submit")).perform();
+		t.tap(driver.findElementById("submitButton")).perform();
+		t.tap(driver.findElementByXPath("//android.widget.Button[@text='OK']")).perform();
+		t.tap(driver.findElementByXPath("//android.widget.Button[@text='Enable Accessibility']")).perform();
+		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"MyMobileSecure\"));");
 		t.tap(driver.findElementByXPath("//android.widget.TextView[@text='MyMobileSecure']")).perform();
-		t.tap(driver.findElementById("com.android.settings:id/switch_widget")).perform();
+		t.tap(driver.findElementByXPath("//android.widget.Switch[@text='OFF']")).perform();
 		t.tap(driver.findElementByXPath("//*[@text='OK']")).perform();
-		t.tap(driver.findElementById("com.android.settings:id/switch_widget")).perform();
-		t.tap(driver.findElementByXPath("//*[@text='OK']")).perform();
-		*/
+		//able to enable Accessibility option, but does not automatically return to MMS app afterwards like during manual install-- must have something to do with appium running, maybe cannot execute this concurrently?
+		//when this happens, i_installed stays at 0
+		//interesting behavior seen-- if left at this screen, the next time Accessibility settings are open, all other Services have disappeared from the menu and need to restart the phone
+		//t.tap(driver.findElementByXPath("//android.widget.Button[@text='Done']")).perform();
+
 	}
 	
 	public static String generateString() {
