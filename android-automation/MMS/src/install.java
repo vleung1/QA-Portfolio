@@ -14,6 +14,7 @@ public class install extends base {
 
 		AndroidDriver<AndroidElement> driver = Capabilities();
 		TouchAction t = new TouchAction(driver);
+		
 		Dimension size = driver.manage().window().getSize();
 		System.out.println(size);
 		int starty = (int)(size.height * 0.50);
