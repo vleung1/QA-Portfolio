@@ -19,7 +19,7 @@ public class base {
 
 	public static AndroidDriver<AndroidElement> Capabilities() throws MalformedURLException {
 		
-		//this is for loading apps pre-installed on a real device
+		//this is config for automating apps already installed on a real device
 		DesiredCapabilities cap = new DesiredCapabilities();
 		//set platform name
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
@@ -32,12 +32,12 @@ public class base {
 		cap.setCapability("appPackage", "com.raaga.android");
 		//set activity name (app screen to load)
 		cap.setCapability("appActivity", "com.raaga.android.SplashScreen");
-		//set connection to appium
+		//create driver and set connection to appium
 		AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 		
-		/* this is DesiredCapabilities config for loading app onto real device via the src folder, similar to running on emulator
+		/* this is config for automating apps on a real device and app not already installed on device 
 		File f = new File("src");
 		File fs = new File(f, "Raaga.apk");
 		DesiredCapabilities cap = new DesiredCapabilities();
@@ -60,6 +60,7 @@ public class base {
 		*/
 	}
 	
+	//swipe methods
 	public static void swipeHorizontal(AndroidDriver<AndroidElement> driver, double startPercentage, double finalPercentage, double anchorPercentage, int duration) throws Exception {
         Dimension size = driver.manage().window().getSize();
         int anchor = (int) (size.height * anchorPercentage);
