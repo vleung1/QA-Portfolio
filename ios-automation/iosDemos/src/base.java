@@ -2,6 +2,7 @@
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -12,7 +13,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class base {
 
-	public static void main(String[] args) throws MalformedURLException {
+	public static IOSDriver<IOSElement> Capabilities() throws MalformedURLException {
 		
 		//this is config for automation on iOS emulator
 		//create the desiredcapabilities class
@@ -27,6 +28,8 @@ public class base {
 		cap.setCapability(MobileCapabilityType.APP, "//Users//Vince//Desktop//iosAutomation//UICatalog.app");
 		//create the driver and set connection to appium server
 		IOSDriver<IOSElement> driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return driver;
 	}
 
 }
