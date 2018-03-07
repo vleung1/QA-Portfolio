@@ -3,6 +3,6 @@ My name is Vincent Leung and I am a software QA professional working and living 
 
 You can reach me at vleung1@gmail.com
 
-My LinkedIn profile is at https://www.linkedin.com/in/v1ncentleung 
+My LinkedIn profile is at https://www.linkedin.com/in/vleung
 
 Feel free to contact me with any inquiries.
