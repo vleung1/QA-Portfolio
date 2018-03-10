@@ -36,9 +36,9 @@ public class menuBrowse extends base{
 		driver.navigate().back();
 		t.tap(driver.findElementByAccessibilityId("Picker View")).perform();
 		driver.findElementByName("Blue color component value").sendKeys("140");
-
 		driver.findElementsByClassName("XCUIElementTypePickerWheel").get(0).sendKeys("50");
 		driver.findElementByAccessibilityId("Green color component value").sendKeys("220");
+		//changing any 2 wheels is OK, but the 3rd one causes UICatalog app to crash, no matter which order the wheels are used-- could not reproduce during manual interaction
 		//driver.findElementByXPath("//*[@name='Blue color component value']").sendKeys("130");
 		driver.navigate().back();
 
